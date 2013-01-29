@@ -1,0 +1,2 @@
+<?php
+	$s_plugin_ProjectManagement_title = 'Project Management';
