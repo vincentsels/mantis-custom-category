@@ -26,7 +26,7 @@ class CustomCategoryPlugin extends MantisPlugin {
     function filter_columns() {
         require_once('classes/CustomCategoryBudgetClassColumn.class.php');
         return array(
-            'ProjectManagementEstColumn'
+            'CustomCategoryBudgetClassColumn'
         );
     }
 }
