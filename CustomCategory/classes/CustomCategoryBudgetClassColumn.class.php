@@ -31,7 +31,7 @@ class CustomCategoryBudgetClassColumn extends MantisColumn {
         } else { # Roadmap project
             $t_bug_customer_table = plugin_table( 'bug_customer', 'ProjectManagement' );
             $t_bug_id = $p_bug->id;
-            $t_query  = "SELECT *
+            $t_query  = "SELECT customers
                            FROM $t_bug_customer_table
                           WHERE bug_id = $t_bug_id
                             AND type = 0";
