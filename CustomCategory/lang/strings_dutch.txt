@@ -1,2 +1,2 @@
 <?php
-	$s_plugin_CustomCategory_budget_class = 'Project Management';
+	$s_plugin_CustomCategory_budget_class = 'Budgettair domein';
