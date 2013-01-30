@@ -18,7 +18,7 @@ class CustomCategoryBudgetClassColumn extends MantisColumn {
             echo 'Werking Certia';
         }
         else if ( $p_bug->project_id == 248 || # Service Desk
-            $p_bug->project_id == 249 ) { # CB
+            $p_bug->project_id == 294 ) { # CB
             ## Non-roadmap project
             if ( $p_bug->category_id == 446 || # Change
                 $p_bug->category_id == 446) { # Project, shoudldnt happen
