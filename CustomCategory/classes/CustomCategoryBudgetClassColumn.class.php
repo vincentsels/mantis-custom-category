@@ -21,6 +21,9 @@ class CustomCategoryBudgetClassColumn extends MantisColumn {
             project_hierarchy_get_parent( $p_bug->project_id ) == 307 ) {
             echo 'Werking Certia';
         }
+        else if ( $p_bug->project_id == 237 ) { # Regressietest
+            echo 'Correctief onderhoud';
+        }
         else if ( $p_bug->project_id == 248 || # Service Desk
             $p_bug->project_id == 294 ) { # CB
             ## Non-roadmap project
