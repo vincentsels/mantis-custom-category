@@ -47,7 +47,7 @@ class CustomCategoryBudgetClassColumn extends MantisColumn {
             while ( $t_row = db_fetch_array( $t_result ) ) {
                 $t_customers = explode( PLUGIN_PM_CUST_CONCATENATION_CHAR, $t_row['customers'] );
             }
-            if ( array_search( (string)PLUGIN_PM_ALL_CUSTOMERS, $t_customers, true ) ) {
+            if ( !is_array( $t_customers ) || array_search( (string)PLUGIN_PM_ALL_CUSTOMERS, $t_customers, true ) ) {
                 echo 'Roadmap projecten';
             } else {
                 echo 'Maatwerk project';
